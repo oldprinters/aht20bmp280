@@ -6,6 +6,7 @@
 #include <AHT10.h>
 #include <BH1750.h>
 #include "Timer.h"
+#include "env.h"
 
 Adafruit_BMP280 bmp;
 AHT10 myAHT20(AHT10_ADDRESS_0X38, AHT20_SENSOR);
@@ -14,8 +15,8 @@ BH1750 lightMeter(0x23);
 Timer timerPressure(600000);  //замер освещённости
 Timer timerTemper(6000);  
 
-const char* ssid = "ivanych";
-const char* password = "stroykomitet";
+// const char* ssid = "ivanych";
+// const char* password = "stroykomitet";
 const char* mqtt_server = "192.168.1.34";
 
 WiFiClient espClient;
