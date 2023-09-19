@@ -15,8 +15,8 @@ BH1750 lightMeter(0x23);
 Timer timerPressure(600000);  //замер освещённости
 Timer timerTemper(6000);  
 
-// const char* ssid = "ivanych";
-// const char* password = "stroykomitet";
+// const char* ssid = "";
+// const char* password = "";
 const char* mqtt_server = "192.168.1.34";
 
 WiFiClient espClient;
